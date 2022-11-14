@@ -2,13 +2,12 @@ const vitalsUrl = 'https://vitals.vercel-analytics.com/v1/vitals';
 
 function getConnectionSpeed() {
   return 'connection' in navigator &&
-    navigator['connection'] &&
-    'effectiveType' in navigator['connection']
-    ? navigator['connection']['effectiveType']
+    // @ts-ignore
+    navigator['connection'] && 'effectiveType' in navigator['connection'] ? navigator['connection']['effectiveType']
     : '';
 }
 
-export function sendToVercelAnalytics(metric) {
+export function sendToVercelAnalytics(metric: { id: any; name: any; value: { toString: () => any; }; }) {
   const analyticsId = process.env.REACT_APP_VERCEL_ANALYTICS_ID;
   if (!analyticsId) {
     return;
