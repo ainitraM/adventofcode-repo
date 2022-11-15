@@ -18,7 +18,7 @@ export default function Form(props: ModalType) {
     console.log(form);
     try {
       setFormStatus('Submitting...')
-      const response = await axios.post('https://api.apispreadsheets.com/data/gm8o5Ofyofr5lmbj/',
+      const response = await axios.post('https://sheet.best/api/sheets/7b203d8b-41bf-4e81-a469-fb714033d1f9',
         form);
     } catch (err) {
       setFormStatus('Something went wrong. Retry.')
