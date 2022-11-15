@@ -57,9 +57,6 @@ function App() {
         </p>
       </header>
       <div className="card">
-        <button onClick={() => console.log(leaderboard)}>
-          Print leaderboard
-        </button>
         <div className="score-table-wrapper">
           {isLoaded &&
 		        <table className="score-table">
