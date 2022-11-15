@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import './App.css';
 import logo from './assets/tree.svg';
+import Form from "./components/Form";
+import useForm from "./hooks/useForm";
 
 type Member = {
   global_score: number;
@@ -15,6 +17,7 @@ type Member = {
 function App() {
   const [leaderboard, setLeaderboard] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
+  const { isOpen, toggle } = useForm();
 
   const fetchLeaderboard = async () => {
     const response = await fetch('https://adventofcode-api.vercel.app/api/leaderboard');
@@ -42,7 +45,7 @@ function App() {
     fetchLeaderboard();
     const interval = setInterval(() => {
       fetchLeaderboard();
-    }, 10000); // refreshing leaderboard every 10s
+    }, 300000); // refreshing leaderboard every 5m
     return () => clearInterval(interval);
   }, []);
 
@@ -71,8 +74,8 @@ function App() {
 			        </thead>
 			        <tbody>
                 {leaderboard.map((member: Member, index) => {
-                  return  <tr key={ index }>
-                    <th> { index } </th>
+                  return  <tr key={ index+1 }>
+                    <th> { index+1 } </th>
                     <th>{ member.name === null ? 'Anonymous ' + member.id : member.name } </th>
                     <th> {member.global_score } </th>
                     <th> {member.local_score } </th>
@@ -84,10 +87,13 @@ function App() {
           }
         </div>
         <div className="leader-board-link">
-          Visit <a href="https://adventofcode.com/" target="_blank" rel="noreferrer">
-            AoC site</a> and join the Leaderboard of Klarna with the code <code>2243249-81a30f2c</code>.
+          <u onClick={toggle}>Register</u> yourself and <a href="https://adventofcode.com/" target="_blank" rel="noreferrer">
+             join the Leaderboard of Klarna</a> using the code <code>2243249-81a30f2c</code>.
         </div>
       </div>
+      {isOpen &&
+        <Form isOpen={isOpen} toggle={toggle}/>
+      }
     </div>
   );
 }

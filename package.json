@@ -8,6 +8,8 @@
     "@types/node": "^17.0.9",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.8",
+    "jquery": "^3.6.1",
+    "jQuery": "^1.7.4",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
@@ -37,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14"
   }
 }

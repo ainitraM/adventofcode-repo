@@ -55,3 +55,79 @@
 .score-table td {
   padding: 12px 15px;
 }
+
+.form-modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%; /* Full width */
+  height: 60%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+
+.modal-content {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 14px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.input {
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid forestgreen;
+  transition: all 0.3s;
+  padding: 10px;
+  width: 70%;
+  box-sizing: border-box;
+  display: block;
+  margin: 10px 10px 10px 15px;
+}
+
+.input-label {
+  size: 20px;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.input,
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input:focus {
+  background-color: #00000a;
+}
+
+.submit-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
