@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import './App.css';
-import logo from './assets/tree.svg';
+import logo from './assets/klarna-banner-4-3.png';
 import Form from "./components/Form";
 import useForm from "./hooks/useForm";
 
@@ -53,7 +53,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <a className="logo-container" href="https://adventofcode.com/" target="_blank" rel="noreferrer">
-          <img src={logo} className="logo" alt="AoC Logo" />
+          <img src={logo} alt="AoC Logo" />
         </a>
         <p>
           Klarna's internal <b>Advent Of Code</b> leaderboard.
