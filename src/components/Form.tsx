@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import banner from "../assets/klarna-banner-3-3.png";
 
 interface ModalType {
   isOpen: boolean;
