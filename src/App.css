@@ -1,7 +1,7 @@
 .App-header {
   background-color: black;
   min-height: 25vh;
-  height: 20%;
+  height: 22%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +9,13 @@
   text-align: center;
   color: white;
   font-size: 2.3vh;
+  padding-bottom: 10px;
+}
+
+small {
+  font-size: 1.5vh;
+  margin-top: -15px;
+  color: pink;
 }
 
 img {
@@ -19,6 +26,11 @@ img {
 .logo {
   filter: invert(42%) sepia(93%) saturate(1000%) hue-rotate(87deg) brightness(100%) contrast(60%);
   pointer-events: none;
+}
+
+u {
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .card {

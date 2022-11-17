@@ -1,10 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-
-interface ModalType {
-  isOpen: boolean;
-  toggle: () => void;
-}
+import { spreadsheetAPI, ModalType } from "../consts";
 
 export default function Form (props: ModalType) {
   const [formStatus, setFormStatus] = React.useState('Send');
@@ -32,7 +28,7 @@ export default function Form (props: ModalType) {
     console.log(form);
     try {
       setFormStatus('Submitting...');
-      await axios.post('https://sheet.best/api/sheets/7b203d8b-41bf-4e81-a469-fb714033d1f9',
+      await axios.post(spreadsheetAPI,
         form);
     } catch (err) {
       setFormStatus('Something went wrong. Retry.');

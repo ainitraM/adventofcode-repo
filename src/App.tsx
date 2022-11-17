@@ -4,15 +4,7 @@ import './App.css';
 import logo from './assets/klarna-banner-4-3.png';
 import Form from "./components/Form";
 import useForm from "./hooks/useForm";
-
-type Member = {
-  global_score: number;
-  id: number;
-  last_star_ts: string;
-  local_score: number;
-  name: string;
-  stars: number;
-}
+import {leaderboardAPI, leaderboardCode, Member} from "./consts";
 
 function App() {
   const [leaderboard, setLeaderboard] = useState([]);
@@ -20,7 +12,7 @@ function App() {
   const { isOpen, toggle } = useForm();
 
   const fetchLeaderboard = async () => {
-    const response = await fetch('https://adventofcode-api.vercel.app/api/leaderboard');
+    const response = await fetch(leaderboardAPI);
     const responseData = await response.json();
     let leaderboard = [];
     const keys = Object.keys(responseData.members);
@@ -45,7 +37,7 @@ function App() {
     fetchLeaderboard();
     const interval = setInterval(() => {
       fetchLeaderboard();
-    }, 300000); // refreshing leaderboard every 5m
+    }, 10000); // refreshing leaderboard every 10s in case something is wrong with api
     return () => clearInterval(interval);
   }, []);
 
@@ -58,6 +50,9 @@ function App() {
         <p>
           Klarna's internal <b>Advent Of Code</b> leaderboard.
         </p>
+        <small>
+          y.2022 | Dec 1st - Dec 25th
+        </small>
       </header>
       <div className="card">
         <div className="score-table-wrapper">
@@ -69,7 +64,7 @@ function App() {
                   <th>Name</th>
                   <th>Global Score</th>
                   <th>Local Score</th>
-                  <th>Starts</th>
+                  <th>Stars &#11088;</th>
                 </tr>
 			        </thead>
 			        <tbody>
@@ -88,7 +83,7 @@ function App() {
         </div>
         <div className="leader-board-link">
           <u onClick={toggle}>Register</u> yourself and <a href="https://adventofcode.com/" target="_blank" rel="noreferrer">
-             join the Leaderboard of Klarna</a> using the code <code>2243249-81a30f2c</code>.
+             join the Leaderboard of Klarna</a> using the code <code>{ leaderboardCode }</code>.
         </div>
       </div>
       {isOpen &&
