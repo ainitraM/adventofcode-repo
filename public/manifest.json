@@ -3,18 +3,18 @@
   "name": "Advent of Code | Klarna",
   "icons": [
     {
-      "src": "tree.svg",
+      "src": "mini-k.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/svg"
+      "type": "image/png"
     },
     {
-      "src": "tree.svg",
-      "type": "image/svg",
+      "src": "mini-k.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "tree.svg",
-      "type": "image/svg",
+      "src": "mini-k.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
