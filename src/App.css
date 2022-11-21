@@ -14,13 +14,13 @@
 
 small {
   font-size: 1.5vh;
-  margin-top: -15px;
+  margin-top: -1.5vh;
   color: pink;
 }
 
 img {
   padding-top: 20px;
-  height: 13vh;
+  height: 5em;
 }
 
 .logo {
@@ -46,6 +46,7 @@ u {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .score-table {
@@ -53,20 +54,29 @@ u {
   margin: 25px 0;
   font-size: 0.9em;
   font-family: sans-serif;
-  min-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  min-width: 350px;
 }
 
 .score-table thead tr {
   background-color: #009879;
   color: #ffffff;
-  text-align: left;
+  text-align: center;
+  height: 8vh;
 }
 
 .score-table th,
 .score-table td {
   padding: 12px 15px;
 }
+
+@media screen and (max-width: 1024px) {
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+}
+
 
 .form-modal {
   position: fixed; /* Stay in place */
