@@ -62,8 +62,6 @@ function App() {
                 <tr>
                   <th>Pos</th>
                   <th>Name</th>
-                  <th>Global Score</th>
-                  <th>Local Score</th>
                   <th>Stars &#11088;</th>
                 </tr>
 			        </thead>
@@ -72,8 +70,6 @@ function App() {
                   return  <tr key={ index+1 }>
                     <th> { index+1 } </th>
                     <th>{ member.name === null ? 'Anonymous ' + member.id : member.name } </th>
-                    <th> {member.global_score } </th>
-                    <th> {member.local_score } </th>
                     <th> {member.stars } </th>
                   </tr>;
                 })}

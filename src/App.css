@@ -55,7 +55,7 @@ u {
   font-size: 0.9em;
   font-family: sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-  min-width: 350px;
+  min-width: 500px;
 }
 
 .score-table thead tr {
