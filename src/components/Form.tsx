@@ -33,7 +33,7 @@ export default function Form (props: ModalType) {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(Object.values(form))
+        body: JSON.stringify(form)
       }).then(() => {
       setFormStatus('Done')
       setRegister('Thank you for signing up!');
