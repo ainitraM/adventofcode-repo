@@ -73,6 +73,7 @@ u {
 .score-table th,
 .score-table td {
   padding: 12px 15px;
+  background-color: white;
 }
 
 @media screen and (max-width: 1024px) {
