@@ -73,6 +73,10 @@ u {
 .score-table th,
 .score-table td {
   padding: 12px 15px;
+}
+
+.score-table tbody th,
+.score-table tbody td {
   background-color: white;
 }
 
@@ -149,7 +153,8 @@ u {
 .input-label {
   size: 20px;
   color: black;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 20px;
   padding: 5px;
 }
 
