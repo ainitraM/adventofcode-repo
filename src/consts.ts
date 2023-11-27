@@ -1,7 +1,7 @@
-export const spreadsheetAPI = "https://sheet.best/api/sheets/7b203d8b-41bf-4e81-a469-fb714033d1f9";
+export const spreadsheetAPI = "https://sheet.best/api/sheets/5d3a32e4-f58b-43a5-8c6c-d052e4e7c272";
 export const leaderboardAPI = "https://adventofcode-api.vercel.app/api/leaderboard";
 
-export const leaderboardCode = "SOON TO BE ADDED";
+export const leaderboardCode = "0000-0000";
 
 export interface ModalType {
   isOpen: boolean;
