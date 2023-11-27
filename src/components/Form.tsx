@@ -26,16 +26,26 @@ export default function Form (props: ModalType) {
 
   const onSubmit = async () => {
     console.log(form);
-    try {
-      setFormStatus('Submitting...');
-      await axios.post(spreadsheetAPI,
-        form);
-    } catch (err) {
+    setFormStatus('Submitting...');
+    fetch(spreadsheetAPI, {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    })
+    .then((r) => r.json())
+    .then((form) => {
+      console.log(form);
+    })
+    .catch((error) => {
       setFormStatus('Something went wrong. Retry.');
-    } finally {
-      setFormStatus('Done')
+   })
+   .finally(() => {
+    setFormStatus('Done')
       setTimeout(() => setFormStatus('Send'), 10000);
-    }
+   });
   }
   return (
     <div className="form-modal">
