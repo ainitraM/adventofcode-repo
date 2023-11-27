@@ -93,9 +93,9 @@ function App() {
         </header>
         <div className="card">
           <div className="leader-board-link">
-            <u onClick={toggle}>Register yourself</u> and <a href="https://adventofcode.com/" target="_blank"
+            <u onClick={toggle}>Register yourself</u> and <u><a href="https://adventofcode.com/" target="_blank"
                                                              rel="noreferrer">
-            join the Leaderboard of Klarna</a> using the code <code>{leaderboardCode}</code>.
+            join the Leaderboard of Klarna</a></u> using the code <code>{leaderboardCode}</code>.
           </div>
           <div className="score-table-wrapper">
             {isLoaded &&

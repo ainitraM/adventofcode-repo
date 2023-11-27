@@ -19,7 +19,7 @@
 small {
   font-size: 1.5vh;
   margin-top: -1.5vh;
-  color: pink;
+  color: #9EFFBB;
 }
 
 img {
@@ -60,11 +60,11 @@ u {
   font-size: 0.9em;
   font-family: sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-  min-width: 550px;
+  min-width: 600px;
 }
 
 .score-table thead tr {
-  background-color: #73F5FF;
+  background-color: #9EFFBB;
   color: black;
   text-align: center;
   height: 8vh;
@@ -104,7 +104,7 @@ u {
 .form-header {
   color: white;
   text-align: center;
-  background: #FFB3C7;
+  background: #9EFFBB;
   width: 100%;
   padding: 15px 0;
   border-radius: 3px 3px 0 0;
@@ -133,7 +133,7 @@ u {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #FFB3C7;
+  border:2px solid #9EFFBB;
   transition: all 0.3s;
   padding: 10px;
   box-sizing: border-box;
@@ -161,7 +161,7 @@ u {
 }
 
 .input:hover {
-  border:2px solid #ffe6ed;
+  border:2px solid #9EFFBB;
 }
 
 .close:hover,
@@ -181,7 +181,7 @@ u {
 }
 
 .submit-button {
-  background-color: #ffcddb;
+  background-color: #9EFFBB;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -224,7 +224,7 @@ u {
   margin-top: 10px;
   cursor: pointer;
   font-size: 15px;
-  background: #FFB3C7;
+  background: #9EFFBB;
   border: 1px solid white;
   color: white;
   padding: 10px 20px;
