@@ -51,7 +51,7 @@ function App() {
           Klarna's internal <b>Advent Of Code</b> leaderboard.
         </p>
         <small>
-          y.2022 | Dec 1st - Dec 25th
+          y.2023 | Dec 1st - Dec 25th
         </small>
       </header>
       <div className="card">
