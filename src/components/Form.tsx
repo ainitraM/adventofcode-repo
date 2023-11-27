@@ -28,6 +28,7 @@ export default function Form (props: ModalType) {
     setFormStatus('Submitting...');
     fetch(spreadsheetAPI, {
         method: 'POST',
+        mode: 'cors',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
