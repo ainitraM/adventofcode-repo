@@ -88,12 +88,12 @@ function App() {
             Klarna's internal <b>Advent Of Code</b> leaderboard.
           </p>
           <small>
-            y.2022 | Dec 1st - Dec 25th
+            y.2023 | Dec 1st - Dec 25th
           </small>
         </header>
         <div className="card">
           <div className="leader-board-link">
-            <u onClick={toggle}>Register</u> yourself and <a href="https://adventofcode.com/" target="_blank"
+            <u onClick={toggle}>Register yourself</u> and <a href="https://adventofcode.com/" target="_blank"
                                                              rel="noreferrer">
             join the Leaderboard of Klarna</a> using the code <code>{leaderboardCode}</code>.
           </div>
