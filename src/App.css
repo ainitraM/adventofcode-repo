@@ -55,12 +55,12 @@ u {
   font-size: 0.9em;
   font-family: sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-  min-width: 500px;
+  min-width: 550px;
 }
 
 .score-table thead tr {
-  background-color: #009879;
-  color: #ffffff;
+  background-color: #73F5FF;
+  color: black;
   text-align: center;
   height: 8vh;
 }
@@ -75,8 +75,11 @@ u {
     overflow-x: auto;
     display: block;
   }
-}
 
+  .score-table {
+    min-width: 300px;
+  }
+}
 
 .form-modal {
   position: fixed; /* Stay in place */
@@ -96,7 +99,7 @@ u {
 .form-header {
   color: white;
   text-align: center;
-  background: green;
+  background: #FFB3C7;
   width: 100%;
   padding: 15px 0;
   border-radius: 3px 3px 0 0;
@@ -125,7 +128,7 @@ u {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid forestgreen;
+  border:2px solid #FFB3C7;
   transition: all 0.3s;
   padding: 10px;
   box-sizing: border-box;
@@ -153,7 +156,7 @@ u {
 }
 
 .input:hover {
-  border:2px solid #61DC65;
+  border:2px solid #ffe6ed;
 }
 
 .close:hover,
@@ -164,16 +167,16 @@ u {
 }
 
 .input:focus {
-  background-color: #303030;
   outline: 0;
 }
 
 .submit-button:hover {
-  background-color: #4CAA00;
+  background-color: #ffe6ed;
+  size: 20px;
 }
 
 .submit-button {
-  background-color: #61C664;
+  background-color: #ffcddb;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -182,4 +185,47 @@ u {
   display: inline-block;
   font-size: 16px;
   margin: 15px;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  background-color: #f8f9fd;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+.confirm-password {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #FFB3C7;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+}
+
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
