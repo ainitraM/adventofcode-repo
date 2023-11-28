@@ -93,9 +93,9 @@ function App() {
         </header>
         <div className="card">
           <div className="leader-board-link">
-            <u onClick={toggle}>Register yourself</u> and <u><a href="https://adventofcode.com/" target="_blank"
-                                                             rel="noreferrer">
-            join the Leaderboard of Klarna</a></u> using the code <code>{leaderboardCode}</code>.
+            To participate in Klarna's internal competition, you need to sign up in 2 steps:
+            1. <u>Join</u> the AoC leaderboard using the following ID: <u>{leaderboardCode}</u>
+            2. <u onClick={toggle}>Register</u> yourself in the Klarna internal leaderboard.
           </div>
           <div className="score-table-wrapper">
             {isLoaded &&
