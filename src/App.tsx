@@ -78,7 +78,7 @@ function App() {
 
   return (
     <>
-      {!isVerified ? renderForm :
+      {isVerified ? renderForm :
       <div className="App">
         <header className="App-header">
           <a className="logo-container" href="https://adventofcode.com/" target="_blank" rel="noreferrer">
@@ -94,7 +94,7 @@ function App() {
         <div className="card">
           <div className="leader-board-link">
             <span className="leader-board-top">To participate in Klarna's internal competition, you need to sign up in 2 steps:</span>
-            <span>1. <u>Join</u> the AoC leaderboard using the following ID: <u>{leaderboardCode}</u></span>
+            <span>1. <b>Join</b> the AoC leaderboard using the following ID: <b>{leaderboardCode}</b></span>
             <span>2. <u onClick={toggle}>Register</u> yourself in the Klarna internal leaderboard.</span>
           </div>
           <div className="score-table-wrapper">
