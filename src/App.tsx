@@ -93,9 +93,9 @@ function App() {
         </header>
         <div className="card">
           <div className="leader-board-link">
-            To participate in Klarna's internal competition, you need to sign up in 2 steps:
-            1. <u>Join</u> the AoC leaderboard using the following ID: <u>{leaderboardCode}</u>
-            2. <u onClick={toggle}>Register</u> yourself in the Klarna internal leaderboard.
+            <span>To participate in Klarna's internal competition, you need to sign up in 2 steps:</span>
+            <span>1. <u>Join</u> the AoC leaderboard using the following ID: <u>{leaderboardCode}</u></span>
+            <span>2. <u onClick={toggle}>Register</u> yourself in the Klarna internal leaderboard.</span>
           </div>
           <div className="score-table-wrapper">
             {isLoaded &&
