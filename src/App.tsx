@@ -13,7 +13,7 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const { isOpen, toggle } = useForm();
   const [isVerified, setIsVerified] = useState(false);
-  const [password, setPassword] = useState('');
+  const [password, setPassword] = useState('a');
 
   const fetchLeaderboard = async () => {
     const response = await fetch(leaderboardAPI, {
