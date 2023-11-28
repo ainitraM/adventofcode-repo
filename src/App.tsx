@@ -93,8 +93,8 @@ function App() {
         </header>
         <div className="card">
           <div className="leader-board-link">
-            <span>To participate in Klarna's internal competition, you need to sign up in 2 steps:</span>
-            <span>1. <u>Join</u> the AoC leaderboard using the following ID: <u>{leaderboardCode}</u></span>
+            <span className="leader-board-top">To participate in Klarna's internal competition, you need to sign up in 2 steps:</span>
+            <span>1. <b>Join</b> the AoC leaderboard using the following ID: <u>{leaderboardCode}</u></span>
             <span>2. <u onClick={toggle}>Register</u> yourself in the Klarna internal leaderboard.</span>
           </div>
           <div className="score-table-wrapper">
