@@ -78,7 +78,7 @@ function App() {
 
   return (
     <>
-      {isVerified ? renderForm :
+      {!isVerified ? renderForm :
       <div className="App">
         <header className="App-header">
           <a className="logo-container" href="https://adventofcode.com/" target="_blank" rel="noreferrer">
